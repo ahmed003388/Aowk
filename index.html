@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إيليجانس - متجر الملابس الفاخرة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 0123456789</span>
+                    <span><i class="fas fa-envelope"></i> info@elegance.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- الهيدر الرئيسي -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>إيليجانس</h1>
+                    <p>للموضة الفاخرة</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active">الرئيسية</a></li>
+                        <li><a href="#">المنتجات</a></li>
+                        <li class="mega-menu">
+                            <a href="#">أقسام المتجر <i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column">
+                                    <h4>ملابس رجالية</h4>
+                                    <ul>
+                                        <li><a href="#">تيشيرتات</a></li>
+                                        <li><a href="#">قمصان</a></li>
+                                        <li><a href="#">جينز</a></li>
+                                        <li><a href="#">جاكيتات</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>ملابس نسائية</h4>
+                                    <ul>
+                                        <li><a href="#">فساتين</a></li>
+                                        <li><a href="#">بلوزات</a></li>
+                                        <li><a href="#">تنانير</a></li>
+                                        <li><a href="#">جينز</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>إكسسوارات</h4>
+                                    <ul>
+                                        <li><a href="#">ساعات</a></li>
+                                        <li><a href="#">حقائب</a></li>
+                                        <li><a href="#">نظارات</a></li>
+                                        <li><a href="#">مجوهرات</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column promo">
+                                    <img src="images/mega-menu-promo.jpg" alt="عرض خاص">
+                                    <h4>خصم يصل إلى 40%</h4>
+                                    <a href="#" class="promo-btn">تسوق الآن</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">العروض</a></li>
+                        <li><a href="#">الماركات</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن منتج...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="#"><i class="far fa-user"></i></a>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <div class="cart-icon" id="cartIcon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                            <div class="cart-dropdown" id="cartDropdown">
+                                <div class="cart-header">
+                                    <h4>سلة التسوق</h4>
+                                    <button class="close-cart"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="cart-items" id="cartItems"></div>
+                                <div class="cart-footer">
+                                    <div class="cart-total">
+                                        <span>المجموع:</span>
+                                        <span id="cartTotal">0.00</span> ج.م
+                                    </div>
+                                    <a href="#" class="checkout-btn">إتمام الشراء</a>
+                                    <a href="#" class="view-cart-btn">عرض السلة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/hero-bg1.jpg')">
+                <div class="slide-content">
+                    <h2>مجموعة الصيف الجديدة</h2>
+                    <p>خصم 30% على جميع المنتجات</p>
+                    <a href="#" class="btn">تسوق الآن</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-bg2.jpg')">
+                <div class="slide-content">
+                    <h2>أزياء السهرات الفاخرة</h2>
+                    <p>تشكيلة حصرية من المصممين العالميين</p>
+                    <a href="#" class="btn">اكتشف المزيد</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-bg3.jpg')">
+                <div class="slide-content">
+                    <h2>عروض نهاية الموسم</h2>
+                    <p>وفر حتى 50% على تشكيلتنا الشتوية</p>
+                    <a href="#" class="btn">استفد من العرض</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-right"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-left"></i></button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>شحن سريع</h3>
+                    <p>توصيل خلال 24-48 ساعة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>إرجاع سهل</h3>
+                    <p>14 يوم لإرجاع المنتجات</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>دفع آمن</h3>
+                    <p>طرق دفع متعددة وآمنة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>دعم فني</h3>
+                    <p>خدمة عملاء 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفئات -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">تصفح حسب الفئة</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/category-men.jpg" alt="ملابس رجالية">
+                    <div class="category-overlay">
+                        <h3>ملابس رجالية</h3>
+                        <a href="#" class="btn">عرض المنتجات</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-women.jpg" alt="ملابس نسائية">
+                    <div class="category-overlay">
+                        <h3>ملابس نسائية</h3>
+                        <a href="#" class="btn">عرض المنتجات</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-kids.jpg" alt="ملابس أطفال">
+                    <div class="category-overlay">
+                        <h3>ملابس أطفال</h3>
+                        <a href="#" class="btn">عرض المنتجات</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-accessories.jpg" alt="إكسسوارات">
+                    <div class="category-overlay">
+                        <h3>إكسسوارات</h3>
+                        <a href="#" class="btn">عرض المنتجات</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات المميزة -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">منتجات مميزة</h2>
+                <div class="product-tabs">
+                    <button class="tab-btn active" data-category="all">الكل</button>
+                    <button class="tab-btn" data-category="men">رجالي</button>
+                    <button class="tab-btn" data-category="women">نسائي</button>
+                    <button class="tab-btn" data-category="accessories">إكسسوارات</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsContainer"></div>
+        </div>
+    </section>
+
+    <!-- قسم العروض الخاصة -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">عروض خاصة</h2>
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <span class="discount-badge">خصم 40%</span>
+                    <h3>عرض نهاية الموسم</h3>
+                    <p>خصم يصل إلى 40% على تشكيلة الشتاء</p>
+                    <a href="#" class="btn">تسوق الآن</a>
+                </div>
+                <div class="offer-timer">
+                    <h4>ينتهي العرض خلال:</h4>
+                    <div class="timer">
+                        <div class="timer-item">
+                            <span id="days">00</span>
+                            <span>أيام</span>
+                        </div>
+                        <div class="timer-item">
+                            <span id="hours">00</span>
+                            <span>ساعات</span>
+                        </div>
+                        <div class="timer-item">
+                            <span id="minutes">00</span>
+                            <span>دقائق</span>
+                        </div>
+                        <div class="timer-item">
+                            <span id="seconds">00</span>
+                            <span>ثواني</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الماركات -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">أشهر الماركات</h2>
+            <div class="brands-slider">
+                <div class="brand-item"><img src="images/brand1.png" alt="ماركة 1"></div>
+                <div class="brand-item"><img src="images/brand2.png" alt="ماركة 2"></div>
+                <div class="brand-item"><img src="images/brand3.png" alt="ماركة 3"></div>
+                <div class="brand-item"><img src="images/brand4.png" alt="ماركة 4"></div>
+                <div class="brand-item"><img src="images/brand5.png" alt="ماركة 5"></div>
+                <div class="brand-item"><img src="images/brand6.png" alt="ماركة 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">آراء عملائنا</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "أفضل متجر لشراء الملابس أونلاين، جودة المنتجات ممتازة والتوصيل سريع جداً. أنصح الجميع بالتسوق من هنا."
+                        </p>
+                        <div class="client-info">
+                            <img src="images/client1.jpg" alt="عميل 1">
+                            <div>
+                                <h4>أحمد محمد</h4>
+                                <span>عميل منذ 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "تجربة تسوق رائعة، خدمة العملاء ممتازة وساعدوني في اختيار المقاس المناسب. المنتجات كما هي في الصور تماماً."
+                        </p>
+                        <div class="client-info">
+                            <img src="images/client2.jpg" alt="عميل 2">
+                            <div>
+                                <h4>سارة خالد</h4>
+                                <span>عميلة منذ 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "اشتريت عدة مرات من المتجر وجميع تجاربي كانت ممتازة. الأسعار مناسبة والجودة عالية. شكراً لفريق إيليجانس."
+                        </p>
+                        <div class="client-info">
+                            <img src="images/client3.jpg" alt="عميل 3">
+                            <div>
+                                <h4>علي محمود</h4>
+                                <span>عميل منذ 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم النشرة البريدية -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>اشترك في نشرتنا البريدية</h3>
+                    <p>احصل على آخر العروض والتخفيضات مباشرة إلى بريدك الإلكتروني</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني">
+                    <button type="submit" class="btn">اشتراك</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="logo">
+                        <h3>إيليجانس</h3>
+                        <p>للموضة الفاخرة</p>
+                    </div>
+                    <p class="footer-about">
+                        متجر إيليجانس هو وجهتك الأولى لشراء أحدث صيحات الموضة بجودة عالية وأسعار تنافسية. نقدم تشكيلة واسعة من الملابس والإكسسوارات للرجال والنساء والأطفال.
+                    </p>
+                    <div class="payment-methods">
+                        <h4>طرق الدفع المتاحة:</h4>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-amazon-pay"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">منتجات جديدة</a></li>
+                        <li><a href="#">عروض خاصة</a></li>
+                        <li><a href="#">الماركات</a></li>
+                        <li><a href="#">حسابي</a></li>
+                        <li><a href="#">سجل المشتريات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>خدمة العملاء</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">حسابي</a></li>
+                        <li><a href="#">تتبع الطلب</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">دليل المقاسات</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>معلومات المتجر</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 شارع التجارة، القاهرة، مصر</li>
+                        <li><i class="fas fa-phone"></i> 0123456789</li>
+                        <li><i class="fas fa-envelope"></i> info@elegance.com</li>
+                        <li><i class="fas fa-clock"></i> يومياً من 9 صباحاً إلى 11 مساءً</li>
+                    </ul>
+                    <div class="footer-social">
+                        <h4>تابعنا على:</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 إيليجانس. جميع الحقوق محفوظة.
+                </div>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- نافذة البحث -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <button class="close-search"><i class="fas fa-times"></i></button>
+            <h3>ابحث عن منتج</h3>
+            <form class="search-form">
+                <input type="text" placeholder="ما الذي تبحث عنه؟">
+                <button type="submit"><i class="fas fa-search"></i> بحث</button>
+            </form>
+            <div class="search-suggestions">
+                <h4>اقتراحات بحث شائعة:</h4>
+                <ul>
+                    <li><a href="#">تيشيرت رجالي</a></li>
+                    <li><a href="#">جينز نسائي</a></li>
+                    <li><a href="#">حذاء رياضي</a></li>
+                    <li><a href="#">ساعة يد</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
